@@ -23,6 +23,7 @@ public DbSet<Customer> Customers { get; set; }
             .Property(c =>
             c.LastName).IsRequired().HasMaxLength(30);
         }
+        public DbSet<VipOrder> VipOrders { get; set; }
 
     }
 }

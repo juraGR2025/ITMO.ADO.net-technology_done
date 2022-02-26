@@ -33,6 +33,7 @@ namespace CourseManager
             this.closeForm = new System.Windows.Forms.Button();
             this.courseGridView = new System.Windows.Forms.DataGridView();
             this.saveChanges = new System.Windows.Forms.Button();
+            this.viewOffices = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.courseGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@ namespace CourseManager
             this.courseGridView.Name = "courseGridView";
             this.courseGridView.RowHeadersWidth = 51;
             this.courseGridView.RowTemplate.Height = 24;
-            this.courseGridView.Size = new System.Drawing.Size(247, 221);
+            this.courseGridView.Size = new System.Drawing.Size(739, 221);
             this.courseGridView.TabIndex = 2;
             // 
             // saveChanges
@@ -75,11 +76,22 @@ namespace CourseManager
             this.saveChanges.UseVisualStyleBackColor = true;
             this.saveChanges.Click += new System.EventHandler(this.saveChanges_Click);
             // 
+            // viewOffices
+            // 
+            this.viewOffices.Location = new System.Drawing.Point(350, 20);
+            this.viewOffices.Name = "viewOffices";
+            this.viewOffices.Size = new System.Drawing.Size(129, 30);
+            this.viewOffices.TabIndex = 4;
+            this.viewOffices.Text = "View Offices";
+            this.viewOffices.UseVisualStyleBackColor = true;
+            this.viewOffices.Click += new System.EventHandler(this.viewOffices_Click);
+            // 
             // CourseViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.viewOffices);
             this.Controls.Add(this.saveChanges);
             this.Controls.Add(this.courseGridView);
             this.Controls.Add(this.closeForm);
@@ -98,6 +110,7 @@ namespace CourseManager
         private System.Windows.Forms.Button closeForm;
         private System.Windows.Forms.DataGridView courseGridView;
         private System.Windows.Forms.Button saveChanges;
+        private System.Windows.Forms.Button viewOffices;
     }
 }
 

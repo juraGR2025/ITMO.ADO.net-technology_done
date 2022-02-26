@@ -51,6 +51,7 @@ namespace CustomerManager
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.ViporderradioButton = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
             this.SuspendLayout();
@@ -154,11 +155,12 @@ namespace CustomerManager
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ViporderradioButton);
             this.groupBox1.Controls.Add(this.OrderradioButton);
             this.groupBox1.Controls.Add(this.CustomerradioButton);
             this.groupBox1.Location = new System.Drawing.Point(548, 89);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(285, 98);
+            this.groupBox1.Size = new System.Drawing.Size(330, 98);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -259,6 +261,17 @@ namespace CustomerManager
             this.label5.TabIndex = 19;
             this.label5.Text = "Фото";
             // 
+            // ViporderradioButton
+            // 
+            this.ViporderradioButton.AutoSize = true;
+            this.ViporderradioButton.Location = new System.Drawing.Point(238, 44);
+            this.ViporderradioButton.Name = "ViporderradioButton";
+            this.ViporderradioButton.Size = new System.Drawing.Size(49, 21);
+            this.ViporderradioButton.TabIndex = 2;
+            this.ViporderradioButton.TabStop = true;
+            this.ViporderradioButton.Text = "Vip";
+            this.ViporderradioButton.UseVisualStyleBackColor = true;
+            // 
             // CustomerViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -319,6 +332,7 @@ namespace CustomerManager
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton ViporderradioButton;
     }
 }
 

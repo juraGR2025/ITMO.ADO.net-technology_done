@@ -23,7 +23,7 @@ namespace CustomerManager
         public CustomerViewer()
         {
            InitializeComponent();
-         //  Database.SetInitializer(new DropCreateDatabaseIfModelChanges<SampleContext>());
+           Database.SetInitializer(new DropCreateDatabaseIfModelChanges<SampleContext>());
         }
         private void Output()
         {
@@ -31,6 +31,8 @@ namespace CustomerManager
                 GridView.DataSource = context.Customers.ToList();
             else if (this.OrderradioButton.Checked == true)
                 GridView.DataSource = context.Orders.ToList();
+            else if (this.ViporderradioButton.Checked == true)
+                GridView.DataSource = context.VipOrders.ToList();
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -109,6 +111,13 @@ orderlistBox.SelectedItems.OfType<Order>().ToList(),
                 });
                 context.SaveChanges();
                 orderlistBox.DataSource = context.Orders.ToList();
+            context.VipOrders.Add(new VipOrder
+            {
+                ProductName = "Авто",
+                Quantity = 101,
+                PurchaseDate = DateTime.Parse("10.01.2016"),
+                status = "Высокий"
+            });
         }
 
         private void GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
